@@ -1,2 +1,28 @@
   
-<app-padrao-login></app-padrao-login>
+<app-padrao-login
+    title="Saúde e Bem-Estar"
+    primaryBtnText="Login"
+    secondaryBtnText="Registrar"
+
+>
+<form [formGroup]="loginForm">
+        <app-primary-input
+            formControlName="email"
+            inputName="email"
+            type="email"
+            label="Email"
+            placeholder="johndoe@gmail.com"
+        >
+            <img src=""/>
+        </app-primary-input>
+        <app-primary-input
+            formControlName="password"
+            inputName="password"
+            type="password"
+            label="Your Password"
+        >
+        <img src=""/>
+    </app-primary-input>
+    <span>Esqueceu a senha?</span>
+</form>
+</app-padrao-login>
